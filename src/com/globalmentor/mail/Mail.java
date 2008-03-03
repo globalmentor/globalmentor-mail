@@ -21,7 +21,7 @@ import com.globalmentor.util.StringTemplate;
 /**Constant values for mail.
 @author Garret Wilson
 */
-public class MailConstants
+public class Mail
 {
 	/**The property that contains whether mail debug is turned on.*/
 	public final static String MAIL_DEBUG_PROPERTY="mail.debug";
