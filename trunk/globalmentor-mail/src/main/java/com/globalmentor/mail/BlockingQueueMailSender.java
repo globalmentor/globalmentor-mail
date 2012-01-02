@@ -54,7 +54,7 @@ public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsum
 		
 	/**Blocking queue constructor.
 	@param blockingQueue The blocking queue from which elements will be consumed.
-	@param transport The tranport to use for sending the messages.
+	@param transport The transport to use for sending the messages.
 	@param user The authentication user for sending the messages.
 	@param password The authentication password for sending the messages.
 	@exception NullPointerException if the given blocking queue, transport, user, and/or password is <code>null</code>.

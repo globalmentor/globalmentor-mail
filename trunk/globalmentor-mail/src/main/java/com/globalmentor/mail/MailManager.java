@@ -71,7 +71,7 @@ public class MailManager
 		sendQueue=new LinkedBlockingQueue<Message>();	//create a new queue for sending mail messages
 		mailSender=new BlockingQueueMailSender(sendQueue, session.getTransport(), user, password);	//create the mail sender
 		sendThread=new Thread(mailSender, getClass().getName());	//create a new send thread
-		sendThread.setDaemon(true);	//make the sendn thread a daemon so that it won't hold up the application when the system shuts down
+		sendThread.setDaemon(true);	//make the send thread a daemon so that it won't hold up the application when the system shuts down
 		sendThread.start();	//start the send thread
 	}
 }
