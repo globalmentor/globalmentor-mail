@@ -59,8 +59,8 @@ public class MailManager
 	Besides the default JavaMail properties, this implementation expects the mail authentication user to be specified in the <code>mail.<var>transport</var>.user</code> property
 	and the mail authentication password to be specified in the <code>mail.<var>transport</var>.password</code> property
 	@param properties The map of JavaMail properties used to initialize the mail session.
-	@exception NullPointerException if the given properties is <code>null</code>.
-	@exception NoSuchProviderException if the provider specified in the properties cannot be found.
+	@throws NullPointerException if the given properties is <code>null</code>.
+	@throws NoSuchProviderException if the provider specified in the properties cannot be found.
 	*/
 	public MailManager(final Map<?, ?> properties) throws NoSuchProviderException
 	{

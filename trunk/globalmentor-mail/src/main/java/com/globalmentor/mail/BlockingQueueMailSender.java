@@ -57,7 +57,7 @@ public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsum
 	@param transport The transport to use for sending the messages.
 	@param user The authentication user for sending the messages.
 	@param password The authentication password for sending the messages.
-	@exception NullPointerException if the given blocking queue, transport, user, and/or password is <code>null</code>.
+	@throws NullPointerException if the given blocking queue, transport, user, and/or password is <code>null</code>.
 	*/
 	public BlockingQueueMailSender(final BlockingQueue<Message> blockingQueue, final Transport transport, final String user, final String password)
 	{
