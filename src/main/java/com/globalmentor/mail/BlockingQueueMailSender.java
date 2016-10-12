@@ -20,10 +20,10 @@ import java.util.concurrent.BlockingQueue;
 
 import javax.mail.*;
 
+import static java.util.Objects.*;
+
 import com.globalmentor.collections.AbstractRunnableBlockingQueueConsumer;
 import com.globalmentor.log.Log;
-
-import static com.globalmentor.java.Objects.*;
 
 /**
  * A consumer that takes mail messages from a blocking queue and sends them. The given transport connection is opened and closed as needed. Errors are logged.
@@ -66,9 +66,9 @@ public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsum
 	 */
 	public BlockingQueueMailSender(final BlockingQueue<Message> blockingQueue, final Transport transport, final String user, final String password) {
 		super(blockingQueue); //construct the parent class
-		this.transport = checkInstance(transport, "Transport cannot be null.");
-		this.user = checkInstance(user, "User cannot be null.");
-		this.password = checkInstance(password, "Password cannot be null.");
+		this.transport = requireNonNull(transport, "Transport cannot be null.");
+		this.user = requireNonNull(user, "User cannot be null.");
+		this.password = requireNonNull(password, "Password cannot be null.");
 	}
 
 	/**
