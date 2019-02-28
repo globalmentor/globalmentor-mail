@@ -22,6 +22,10 @@
 		<url>https://bitbucket.org/globalmentor/globalmentor-mail</url>
 	</scm>
 
+	<properties>
+		<clogr.version>0.8.0-SNAPSHOT</clogr.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.globalmentor</groupId>
@@ -29,9 +33,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.globalmentor</groupId>
-			<artifactId>globalmentor-log</artifactId>
-			<version>0.5.1-SNAPSHOT</version>
+			<groupId>io.clogr</groupId>
+			<artifactId>clogr</artifactId>
+			<version>${clogr.version}</version>
 		</dependency>
 
 		<dependency>
