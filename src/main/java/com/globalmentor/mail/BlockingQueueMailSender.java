@@ -23,14 +23,15 @@ import javax.mail.*;
 import static java.util.Objects.*;
 
 import com.globalmentor.collections.AbstractRunnableBlockingQueueConsumer;
-import com.globalmentor.log.Log;
+
+import io.clogr.Clogged;
 
 /**
  * A consumer that takes mail messages from a blocking queue and sends them. The given transport connection is opened and closed as needed. Errors are logged.
  * This runnable's interruption policy is to end execution.
  * @author Garret Wilson
  */
-public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsumer<Message> {
+public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsumer<Message> implements Clogged {
 
 	/** The transport used for sending messages. */
 	private final Transport transport;
@@ -86,7 +87,7 @@ public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsum
 				transport.close(); //close the transport; we'll open it as needed
 			}
 		} catch(final MessagingException messagingException) { //if there is a messaging error
-			Log.info(messagingException); //log the error
+			getLogger().info("Error sending message.", messagingException); //log the error
 		}
 	}
 
@@ -98,7 +99,7 @@ public class BlockingQueueMailSender extends AbstractRunnableBlockingQueueConsum
 			getTransport().close(); //close the transport
 			super.stopped(); //do the default stopping
 		} catch(final MessagingException messagingException) { //if there is a messaging error
-			Log.info(messagingException); //log the error
+			getLogger().info("Error closing messaging transport.", messagingException); //log the error
 		}
 	}
 
