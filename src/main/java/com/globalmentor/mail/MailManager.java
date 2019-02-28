@@ -57,7 +57,7 @@ public class MailManager {
 	/** The thread for asynchronous sending. */
 	private final Thread sendThread;
 
-	/** The thread for asynchronous sending. */
+	/** @return The thread for asynchronous sending. */
 	public Thread getSendThread() {
 		return sendThread;
 	}
