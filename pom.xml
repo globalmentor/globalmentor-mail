@@ -22,20 +22,15 @@
 		<url>https://bitbucket.org/globalmentor/globalmentor-mail</url>
 	</scm>
 
-	<properties>
-		<clogr.version>0.8.0-SNAPSHOT</clogr.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.globalmentor</groupId>
-			<artifactId>globalmentor-base</artifactId>
+			<artifactId>globalmentor-core</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>io.clogr</groupId>
 			<artifactId>clogr</artifactId>
-			<version>${clogr.version}</version>
 		</dependency>
 
 		<dependency>
