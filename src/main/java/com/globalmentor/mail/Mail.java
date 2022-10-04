@@ -31,15 +31,15 @@ public class Mail {
 	/** The property that contains the mail host name. */
 	public static final String MAIL_HOST_PROPERTY = "mail.host";
 	/** The template for "mail-<var>protocol</var>.auth". */
-	public static final StringTemplate MAIL_PROTOCOL_AUTH_PROPERTY_TEMPLATE = new StringTemplate("mail.", StringTemplate.STRING_PARAMETER, ".auth");
+	public static final StringTemplate MAIL_PROTOCOL_AUTH_PROPERTY_TEMPLATE = StringTemplate.of("mail.", StringTemplate.STRING_PARAMETER, ".auth");
 	/** The template for "mail-<var>protocol</var>.host". */
-	public static final StringTemplate MAIL_PROTOCOL_HOST_PROPERTY_TEMPLATE = new StringTemplate("mail.", StringTemplate.STRING_PARAMETER, ".host");
+	public static final StringTemplate MAIL_PROTOCOL_HOST_PROPERTY_TEMPLATE = StringTemplate.of("mail.", StringTemplate.STRING_PARAMETER, ".host");
 	/** The template for "mail-<var>protocol</var>.password". */
-	public static final StringTemplate MAIL_PROTOCOL_PASSWORD_PROPERTY_TEMPLATE = new StringTemplate("mail.", StringTemplate.STRING_PARAMETER, ".password");
+	public static final StringTemplate MAIL_PROTOCOL_PASSWORD_PROPERTY_TEMPLATE = StringTemplate.of("mail.", StringTemplate.STRING_PARAMETER, ".password");
 	/** The template for "mail-<var>protocol</var>.port". */
-	public static final StringTemplate MAIL_PROTOCOL_PORT_PROPERTY_TEMPLATE = new StringTemplate("mail.", StringTemplate.STRING_PARAMETER, ".port");
+	public static final StringTemplate MAIL_PROTOCOL_PORT_PROPERTY_TEMPLATE = StringTemplate.of("mail.", StringTemplate.STRING_PARAMETER, ".port");
 	/** The template for "mail-<var>protocol</var>.user". */
-	public static final StringTemplate MAIL_PROTOCOL_USER_PROPERTY_TEMPLATE = new StringTemplate("mail.", StringTemplate.STRING_PARAMETER, ".user");
+	public static final StringTemplate MAIL_PROTOCOL_USER_PROPERTY_TEMPLATE = StringTemplate.of("mail.", StringTemplate.STRING_PARAMETER, ".user");
 	/** The property that specifies the protocol for mail transport. */
 	public static final String MAIL_TRANSPORT_PROTOCOL_PROPERTY = "mail.transport.protocol";
 
