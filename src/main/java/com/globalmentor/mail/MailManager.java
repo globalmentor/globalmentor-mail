@@ -21,8 +21,8 @@ import java.util.concurrent.*;
 
 import javax.mail.*;
 
+import static com.globalmentor.collections.Maps.*;
 import static com.globalmentor.mail.Mail.*;
-import static com.globalmentor.util.PropertiesUtilities.*;
 
 /**
  * A class for managing mail with asynchronous sending.

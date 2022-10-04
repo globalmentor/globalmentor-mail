@@ -16,7 +16,7 @@
 
 package com.globalmentor.mail;
 
-import com.globalmentor.util.StringTemplate;
+import com.globalmentor.text.StringTemplate;
 
 /**
  * Constant values for mail.
