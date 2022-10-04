@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>globalmentor-mail</artifactId>
-	<version>0.6.0</version>
+	<version>0.6.1-SNAPSHOT</version>
 
 	<name>GlobalMentor Mail</name>
 	<description>GlobalMentor Java mail library.</description>
